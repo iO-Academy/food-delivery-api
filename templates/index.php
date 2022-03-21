@@ -26,8 +26,8 @@
     </style>
 </head>
 <body>
-<h1>Slim</h1>
-<div>a microframework for PHP</div>
-    <p>Try <a href="http://www.slimframework.com">SlimFramework</a></p>
+<h1>Food Delivery API</h1>
+<p>The API is running correctly.</p>
+<p>Check the README.md file for the API documentation.</p>
 </body>
 </html>
