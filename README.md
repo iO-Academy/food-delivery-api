@@ -185,6 +185,8 @@ That's it! Now go build something cool.
     "deliveryTime": 926
     }
   ```
+  `prepTime` and `deliveryTime` are in seconds, the combination of the 2 will give you the total time to delivery from when the order is placed.
+  
 
 * **Error Response:**
 

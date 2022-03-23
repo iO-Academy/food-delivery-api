@@ -2374,35 +2374,10 @@
         "price": 10.67
       },
       {
-        "foodName": "Chick-n-Strips 4 piece",
-        "calories": 470,
-        "price": 5.5
-      },
-      {
-        "foodName": "Chick-n-Strips four piece",
-        "calories": 470,
-        "price": 6.25
-      },
-      {
-        "foodName": "Three piece Chicken Strips",
-        "calories": 360,
-        "price": 5.58
-      },
-      {
         "foodName": "3 piece Chicken Strips",
         "foodType": "Chicken Strips",
         "calories": 360,
         "price": 5.55
-      },
-      {
-        "foodName": "Chick-n-Strips 3 piece",
-        "calories": 360,
-        "price": 2.88
-      },
-      {
-        "foodName": "Chick-n-Strips three piece",
-        "calories": 360,
-        "price": 8.99
       },
       {
         "foodName": "Grilled Chicken Club Sandwich",
