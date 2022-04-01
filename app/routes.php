@@ -5,6 +5,21 @@ use Slim\App;
 use Slim\Interfaces\RouteCollectorProxyInterface as Group;
 
 return function (App $app) {
+
+    // enable options requests
+    $app->options('/{routes:.+}', function ($request, $response) {
+        return $response;
+    });
+
+    // enable CORS
+    $app->add(function ($request, $handler) {
+        $response = $handler->handle($request);
+        return $response
+            ->withHeader('Access-Control-Allow-Origin', '*')
+            ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization')
+            ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
+    });
+
     $container = $app->getContainer();
 
     $app->get('/', function ($request, $response, $args) use ($container) {
