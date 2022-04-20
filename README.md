@@ -164,8 +164,8 @@ That's it! Now go build something cool.
 ```json
 {
     "items": [
-        {"name": "example", "price": 12.49},
-        {"name": "example 2", "price": 12.30}
+        {"name": "example", "price": 12.49, "qty": 1},
+        {"name": "example 2", "price": 12.30, "qty": 1}
     ],
     "total": 24.79
 }

@@ -78,6 +78,13 @@ return function (App $app) {
             return $response->withHeader('Content-type', 'application/json')->withStatus(400);
         }
 
+        foreach ($order['items'] as $item) {
+            if (!isset($item['qty'])) {
+                $response->getBody()->write(json_encode(['message' => 'Order items must have a qty']));
+                return $response->withHeader('Content-type', 'application/json')->withStatus(400);
+            }
+        }
+
         $totalTime = round($order['total'] * 60);
         $prepTime = ($totalTime < 1200 ? 1200 : $totalTime - 900) + random_int(0, 120);
         $deliveryTime = 900 + random_int(0, 120); // 15 mins + 0-2 mins
