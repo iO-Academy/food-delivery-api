@@ -9,7 +9,13 @@ Clone this repo:
 git clone git@github.com:iO-Academy/food-delivery-api.git
 ```
 
-One cloned, you must install the slim components by running:
+Once cloned, move into the `food-delivery-api` directory:
+
+```bash
+cd food-delivery-api
+```
+
+Then you must install the slim components by running:
 
 ```bash
 composer install
